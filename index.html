@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CTA Transitions</title>
+	<style>
+	ul.gallery li{
+		float:left;
+		margin:0 auto;
+		padding:0 10px;
+		list-style: none;
+	}
+	ul.gallery li a img{
+		float: left;
+		width: 200px;
+		z-index: -1;
+	}
+	ul.gallery li a:hover img, button:hover{
+		transform: scale(1.25);
+		box-shadow: 4px 4px 10px rgba(0, 0, 100, 0.5); 
+	}
+	button{
+		float:left;
+		margin:0 auto;
+		padding:0 10px;
+	}
+	</style>
+</head>
+<body>
+	<ul class="gallery">
+		<li><a href="#"><img src="child.jpg" alt="child"><button>Click Me</button></a>
+		</li>
+		<li><a href="#"><img src="child.jpg" alt="child"></a></li>
+		<li><a href="#"><img src="child.jpg" alt="child"></a></li>
+	</ul>
+</body>
+</html>
